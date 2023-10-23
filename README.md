@@ -17,9 +17,9 @@ runs in godot 3, may require some controller mapping depending on your system if
 - mouse, camera movement
 - 1-9, number of planets
 - 0, blow everything up
-- E, spawn a planet in a random position
+- E, spawn a planet in your position
 - Q, blow up adjacent planet
-- `, spawn a planet in your position
+- `, spawn a planet in a random position
 - R, spawn a random number of planets (might lag your system, beware)
 - esc, pause (click in window to get back in)
 
