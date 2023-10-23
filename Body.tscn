@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Body.gd" type="Script" id=1]
+
+[sub_resource type="SphereShape" id=1]
+
+[sub_resource type="SphereMesh" id=2]
+resource_local_to_scene = true
+
+[sub_resource type="SphereShape" id=3]
+radius = 1.5
+
+[node name="Body" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="RigidBody" type="RigidBody" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape" type="CollisionShape" parent="RigidBody"]
+shape = SubResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="RigidBody"]
+mesh = SubResource( 2 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.883586, 0.468269, 0, -0.468269, 0.883586, 0, 2.12425, 4.02848 )
+far = 1000.0
+
+[node name="OmniLight" type="OmniLight" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+
+[node name="Area" type="Area" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+shape = SubResource( 3 )
