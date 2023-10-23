@@ -132,7 +132,8 @@ func _input(event):
 		# get all adjacent planets that is not you
 		for x in $Area.get_overlapping_bodies():
 			if "Body" in x.name and x.get_parent() != self:
-				# Among Us kill sound
+				# Among Us kill sound and turn up volume
+				$AudioStreamPlayer3D.set_unit_db(40)
 				$AudioStreamPlayer3D.stream = preload("res://sounds/impostor_kill.wav")
 				$AudioStreamPlayer3D.play()
 				# for immersize boom
@@ -151,6 +152,8 @@ func byebye():
 	$AudioStreamPlayer3D.play()
 	# wait until explosion done
 	yield($AudioStreamPlayer3D, "finished")
+	# reset volume just in case it was muted in line 140
+	$AudioStreamPlayer3D.set_unit_db(0)
 	# ejected
 	queue_free()
 
