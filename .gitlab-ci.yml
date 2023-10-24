@@ -1,0 +1,9 @@
+pages:
+  stage: deploy
+  script:
+  - mkdir .public
+  - cp -r ./release/web/* .public
+  - mv .public public
+  artifacts:
+    paths:
+    - public

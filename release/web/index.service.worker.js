@@ -3,14 +3,14 @@
 // that they need an Internet connection to run the project if desired.
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
-const CACHE_VERSION = "1698118479|2061470810";
+const CACHE_VERSION = "1698119797|66955779";
 const CACHE_PREFIX = "Newtons Sandbox -sw-cache-";
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
-const OFFLINE_URL = "newton3d.offline.html";
+const OFFLINE_URL = "index.offline.html";
 // Files that will be cached on load.
-const CACHED_FILES = ["newton3d.html","newton3d.js","newton3d.offline.html"];
+const CACHED_FILES = ["index.html","index.js","index.offline.html"];
 // Files that we might not want the user to preload, and will only be cached on first load.
-const CACHABLE_FILES = ["newton3d.wasm","newton3d.pck"];
+const CACHABLE_FILES = ["index.wasm","index.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHABLE_FILES);
 
 self.addEventListener("install", (event) => {

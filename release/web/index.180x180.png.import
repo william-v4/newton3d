@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/newton3d.512x512.png-6024309f3221b517072d3d3118f34b22.stex"
+path="res://.import/index.180x180.png-0b03288f0a54f040c61a0f01c9671402.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://release/web/newton3d.512x512.png"
-dest_files=[ "res://.import/newton3d.512x512.png-6024309f3221b517072d3d3118f34b22.stex" ]
+source_file="res://release/web/index.180x180.png"
+dest_files=[ "res://.import/index.180x180.png-0b03288f0a54f040c61a0f01c9671402.stex" ]
 
 [params]
 
