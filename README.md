@@ -5,7 +5,9 @@ funny gravity 3D simulation that let's you make and blow up planets, great for t
 
 ## Install
 
-runs in godot 3, may require some controller mapping depending on your system if you are using a controller
+**warning: release binaries and web version have not been tested, use at your own risk. For better experience, run in godot engine**
+
+project runs in godot 3.5.3 (download [here](https://godotengine.org/download/3.x)), may require some controller mapping depending on your system if you are using a controller (for some reason controllers behave differently on different OS's or even machines, and different controllers behave differently)
 
 ## Controls
 
@@ -23,7 +25,7 @@ runs in godot 3, may require some controller mapping depending on your system if
 - R, spawn a random number of planets (might lag your system, beware)
 - esc, pause (click in window to get back in)
 
-### Controller (xbox)
+### Controller (xbox controller on linux)
 
 - left stick, movement
 - right stick, camera

@@ -133,7 +133,7 @@ func _input(event):
 		for x in $Area.get_overlapping_bodies():
 			if "Body" in x.name and x.get_parent() != self:
 				# Among Us kill sound and turn up volume
-				$AudioStreamPlayer3D.set_unit_db(40)
+				$AudioStreamPlayer3D.set_unit_db(20)
 				$AudioStreamPlayer3D.stream = preload("res://sounds/impostor_kill.wav")
 				$AudioStreamPlayer3D.play()
 				# for immersize boom
