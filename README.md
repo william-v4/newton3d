@@ -7,6 +7,8 @@ funny gravity 3D simulation that let's you make and blow up planets, great for t
 
 **warning: release binaries and web version have not been tested, use at your own risk. For better experience, run in godot engine**
 
+download the binary for your OS [here](https://github.com/william-v4/newton3d/releases) or play online [here](https://newton3d.williamv4.net/) (beware of **severe **performance issues with that however)
+
 project runs in godot 3.5.3 (download [here](https://godotengine.org/download/3.x)), may require some controller mapping depending on your system if you are using a controller (for some reason controllers behave differently on different OS's or even machines, and different controllers behave differently)
 
 ## Controls
